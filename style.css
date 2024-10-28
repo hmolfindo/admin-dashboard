@@ -2,17 +2,70 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "Oswald";
+    src: url("C:/Users/admin/repos/admin-dashboard/fonts/webfontkit-20241028-100522/oswaldmedium-regular-webfont.woff2")
+    format("woff2"),
+    url("C:/Users/admin/repos/admin-dashboard/fonts/webfontkit-20241028-100522/oswaldmedium-regular-webfont.woff")
+    format("woff");
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("C:/Users/admin/repos/admin-dashboard/fonts/webfontkit-20241028-100522/lora-regular-webfont.woff2")
+    format("woff2"),
+    url("C:/Users/admin/repos/admin-dashboard/fonts/webfontkit-20241028-100522/lora-regular-webfont.woff")
+    format("woff");
+}
+
 #container{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 10fr;
 }
 
 #sidebar{
     grid-row-start: span 3;
     background-color: #003844;
+    padding: 18px;
+    color: mintcream;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dashboard-logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px; 
+}
+
+.logo-filter{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(343deg) brightness(104%) contrast(109%);
+}
+
+.menu{
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: "Lora";
+}
+
+h3{
+    font-family: "Oswald";
+    font-size: 28px;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 16px;
 }
 
 #navbar{
