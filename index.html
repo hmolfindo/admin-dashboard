@@ -10,7 +10,7 @@
     <div id="container">
         <div id="sidebar">
             <div id="logo">
-                <img class="logo-filter"src="dashboard-logo.svg" alt="Dashboard Logo" id="dashboard-logo">
+                <img class="logo-filter"src="assets/dashboard-logo.svg" alt="Dashboard Logo" id="dashboard-logo">
                 <h3>Dashboard</h3>
             </div>
             <div class="menu">
@@ -33,19 +33,28 @@
         </div>
         <div id="navbar">
             <div id="search-nav">
-                <img src="" alt=""> <!--Search icon-->
-                <input type="search" /> <!--Search bar-->
-                <img src="" alt=""> <!--Notifications-->
-                <img src="" alt=""> <!--Profile picture-->
-                <p></p> <!--Profile Name-->
+                <div id="search-div">
+                    <img class="logo-filter search-icon" src="assets/magnify.svg" alt=""> <!--Search icon-->
+                    <input type="search" /> <!--Search bar-->
+                </div>
+                <div id="notif-div" class="border">
+                    <img class="logo-filter bell-icon" src="assets/bell.svg" alt=""> <!--Notifications-->
+                    <img class="logo-filter profile-pic" src="assets/face-man-profile.svg" alt=""> <!--Profile picture-->
+                    <h5>Donkey Kong</h5> <!--Profile Name-->
+                </div>   
             </div>
             <div id="main-menu">
-                <img src="" alt=""> <!--Bigger profile picture-->
-                <div></div> <!--Greetings, user-->
-                <div>
-                    <button></button> <!--New-->
-                    <button></button> <!--Upload-->
-                    <button></button> <!--Share-->
+                <div id="greeting-user">
+                    <img id="big-pfp" class="logo-filter" src="assets/face-man-profile.svg" alt=""> <!--Bigger profile picture-->
+                    <div>
+                        <p>Hi there,</p> <!--Greetings, user-->
+                        <h3>Donkey Kong (@DKong)</h3>
+                    </div>
+                </div>
+                <div id="button-div">
+                    <button>New</button> <!--New-->
+                    <button>Upload</button> <!--Upload-->
+                    <button>Share</button> <!--Share-->
                 </div>
             </div>
         </div>
