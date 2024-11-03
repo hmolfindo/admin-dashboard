@@ -1,0 +1,1 @@
+This is a project from the The Odin Project's Intermediate HTML and CSS course designed to get a grasp of CSS Grid.
