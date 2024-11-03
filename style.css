@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+    overflow: none;
 }
 
 @font-face {
@@ -20,7 +22,7 @@
 
 #container{
     height: 100vh;
-    width: 100vw;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 10fr;
@@ -169,4 +171,108 @@ button{
 
 #dashboard{
     background-color: #f4f1de;
+    padding: 20px 14px 40px 14px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 1fr;
+    column-gap: 24px;
+}
+
+#card-grid{
+    display: grid;
+    grid-template-columns: 5fr 5fr 3fr;
+    grid-template-rows: 5% repeat(3, auto);
+    grid-column-start: span 2;
+    gap: 15px;
+    grid-auto-flow: column;
+}
+
+#your-projects{
+    grid-column-start: span 2;
+}
+
+#your-projects,
+#announcements-label,
+#trending-label{
+    font-family: "Oswald";
+    font-size: 24px;
+}
+
+#trending-label{
+    margin-bottom: 15px;
+}
+
+.card{
+    background-color: #006c67;
+    color: #f4f1de;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    height: 210px;
+    border-left: 8px solid#F194B4;
+    display: grid;
+}
+
+.card-text{
+    font-size: 14px;
+    font-family: "Lora";
+}
+
+.card-buttons{
+    width: 28px;
+    height: 28px;
+    margin-left: 4%;
+}
+
+.card-buttons-layout{
+    align-content: end;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.smaller-text{
+    font-size: 11px;
+}
+
+#announcements{
+    background-color: #006c67;
+    border-radius: 8px;
+    padding: 14px 24px 20px 24px;
+    color: #f4f1de;
+    display: grid;
+    grid-template-rows: 1fr ;
+    row-gap: 12px;
+}
+
+#announcements-label{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+hr{
+    border: 1px solid #f4f1de;
+}
+
+#trending{
+    grid-row-start: 2;
+}
+
+.trending-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.smaller-card-content{
+    margin: 2px 0 4px 0;
+}
+
+#second-column-dashboard{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
