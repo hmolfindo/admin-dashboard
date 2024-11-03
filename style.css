@@ -89,6 +89,9 @@ li{
     justify-content: start;
     align-items: center;
     gap: 24px;
+    font-family: "Oswald";
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 #navbar{
